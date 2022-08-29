@@ -136,3 +136,19 @@ awesome list of [YARA-related stuff](https://github.com/InQuest/awesome-yara).
 * [YALIH](https://github.com/Masood-M/YALIH)
 
 Are you using it? Want to see your site listed here?
+
+## add your module
+
+  可以编写自定义模块。参考链接https://yara.readthedocs.io/en/stable/writingmodules.html
+
+  这里添加androguard模块
+
+  添加文件为androguard.c
+
+  修改文件为**libyara/modules/module_list**  在其中增加模块名
+
+**libyara/Makefile.am** 文件中添加模块名
+
+参考https://github.com/ReturnHere/androguard-yara （为koodous 之前公开代码,本代码为多年前代码，需更改）
+
+ 
